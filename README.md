@@ -25,6 +25,33 @@ At some point in the future I will fill this fake requirements for my small inve
 
 What am I doing and why am I doing it?
 
+## Architecture
+
+            Python -> MongoDB
+Vue.js -> 
+            Java -> PostGres
+
+Java Responsible for:
+Managing list of customers and orders.
+Python Responsible for:
+Inventory and Sales
+
+Vue App:
+- Home Page:
+    - Links
+        - Customer Page
+        - Inventory Page
+        - Order Page
+        - Sales Page
+        - Order Completion page
+- Sales Page - CRUD
+- Inventory Page - CRUD
+- Order Page - CRUD
+- Sales Page - View Only
+- Order Complete Page - Select and order to complete
+    - Removes inventory and then changes status on order adds sale to sales collection.
+
+
 ## Implementation
 
 ## Release Plan
