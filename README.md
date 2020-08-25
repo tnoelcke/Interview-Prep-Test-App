@@ -34,7 +34,7 @@ Vue.js ->
 Java Responsible for:
 Managing list of customers and orders.
 Python Responsible for:
-Inventory and Sales
+Inventory and Salesrm 
 
 Vue App:
 - Home Page:

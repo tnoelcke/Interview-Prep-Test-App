@@ -1,0 +1,21 @@
+version: '3.1'
+services:
+    dynamodb:
+        image: amazon/dynamodb-local
+        container_name: dynamodb
+        ports:
+            - 8080:8080
+    kenisis:
+        image: vsouza/kinesis-local
+        container_name: kenisis
+        command: --port 4567
+        restart: always
+        ports:
+            - 4567:4567
+    sqs:
+        image: vsouza/sqs-local
+        container_name: sqs
+        ports:
+            - 9324:9324
+
+        
